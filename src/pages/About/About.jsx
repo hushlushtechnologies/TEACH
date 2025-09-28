@@ -85,7 +85,7 @@ export default function About() {
           className="who-we-are-image relative     w-full   rounded-lg overflow-hidden  "
         >
           <img
-            src="/src/assets/img/about.png"
+            src="/img/about.png"
             alt="Our creative workspace"
             className="w-full h-full object-cover object-center transform scale-105 hover:scale-100 transition-transform duration-700 ease-out"
           />
@@ -108,7 +108,7 @@ export default function About() {
             <div className="approach-item text-center">
               <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <img
-                  src="/src/assets/img/branding.png"
+                  src="/img/branding.png"
                   alt="Step 1"
                   className="w-full h-full object-contain"
                 />
@@ -125,7 +125,7 @@ export default function About() {
             <div className="approach-item text-center">
               <div className="w-20 h-20  rounded-full flex items-center justify-center mx-auto mb-6">
                 <img
-                   src="/src/assets/img/design.png"
+                   src="/img/design.png"
                   alt="Step 2"
                  className="w-full h-full object-contain"
                 />
@@ -142,7 +142,7 @@ export default function About() {
             <div className="approach-item text-center">
               <div className="w-20 h-20   rounded-full flex items-center justify-center mx-auto mb-6">
                 <img
-                  src="/src/assets/img/launch.png"
+                  src="/img/launch.png"
                   alt="Step 3"
                   className="w-full h-full object-contain"
                 />

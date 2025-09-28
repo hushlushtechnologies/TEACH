@@ -54,7 +54,7 @@ const RecentWork = () => {
           title="  Model Photoshoot"
           description="Experience the essence of fashion and elegance captured in our exclusive model photoshoot. Each frame highlights style, poise, and the artistry behind our latest collection."
           tags="Fashion, Photography, Model Shoot, Editorial"
-          videoUrl="/src/assets/video/modeling.mp4"
+          videoUrl="/video/modeling.mp4"
           isVideoLeft={false}
         />
 
@@ -62,7 +62,7 @@ const RecentWork = () => {
           title="Elegant Kurti Collection Shoot"
           description="Highlighting our exquisite kurti designs through a vibrant photoshoot, capturing colors, patterns, and textures in every frame."
           tags="Product Photography, Fashion, Kurti Shoot"
-          videoUrl="/src/assets/video/product.mp4"
+          videoUrl="/video/product.mp4"
           isVideoLeft={true}
         />
 
@@ -70,7 +70,7 @@ const RecentWork = () => {
           title=" Product Branding"
           description="Designing a cohesive product identity from packaging to promotional visuals, bringing the NEBULUS product line to life."
           tags="Product Design, Packaging, Visual Identity"
-          videoUrl="/src/assets/video/branding.mp4"  
+          videoUrl="/video/branding.mp4"  
           isVideoLeft={false}  
         />
       </div>

@@ -74,7 +74,7 @@ el.innerHTML = text
         {/* Logo */}
         <img
           ref={logoRef}
-          src="/src/assets/favicon.png"
+          src="/favicon.png"
           alt="Logo"
           className="w-20 opacity-0" // initially hidden
         />

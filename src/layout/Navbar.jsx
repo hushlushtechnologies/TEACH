@@ -132,7 +132,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 h-30 w-44">
           <img
-            src="/src/assets/tech.png"
+            src="/tech.png"
             alt="Logo"
             className=" object-contain  "
           />
