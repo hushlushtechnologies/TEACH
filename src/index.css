@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+/* body {
+  font-family: 'Poppins', sans-serif;  
+  background: #0A0A0A;
+  color: #fff;
+} */
+ 
+:root {
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+  /* --color-trionn-bg: #0a0a0a; */
+  --color-trionn-bg: #0f1112;
+}
+
+body {
+  background-color: var(--color-trionn-bg);
+  color: white;
+  font-family: var(--font-body);
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+/* STACK CARD */
+/* .stack-img{
+  display: block;
+  width: 100% ;
+  height: 100%;
+  object-fit: cover;
+}
+
+#smoother-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+#smoother-content {
+  will-change: transform;
+
+}
+
+.spacer , .container{
+  width: 100%;
+   min-height: 100vh  ;
+}
+
+.container{
+  display: flex;
+  flex-direction: column  ;
+  align-items: center;
+}
+
+.stacked-cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.card{
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 75vh;
+}
+
+.card-content , .card-image{
+ width: 50% ;
+  height: 100%;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 10px 20px;
+}
+
+
+.card-content h1{
+  font-family: "Playfair Sans Deva", cursive;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 300;
+}
+
+.card-content p{
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  line-height:1.6 ;
+  width: 80%;
+  margin-top: 15px;
+}
+
+.card-image{
+  border-radius:010px 10px 0 ;
+}
+
+.card-image img{
+  border-radius: inherit ;
+  will-change: clip-path;
+}
+
+@media (max-width: 1200px) {
+  .stacked-cards{
+    width: clamp(85%, 4vw, 90%) ;
+  }
+  }
+
+@media (max-width: 580px) {
+  .card{
+    flex-direction: column-reverse;
+  }
+  .card-content,
+  .card-image{
+    width: 100%;
+  }
+  .card-content{
+    height:40%
+  }
+  .card-content p{
+    line-height: 1.3;
+    width: 90%;
+    margin-top: 0;
+  }
+
+  .card-image{
+    height: 60%;
+    border-radius:10px 10px 0 0 ;
+  }
+}
+@media (max-width: 480px) {
+  .card-image{
+    height: 80%;
+
+  }
+  .card-content{
+    height:20%
+  }
+
+  .card-content h1{
+    margin-top: 20px;
+  }
+
+  .card-content p {
+    display: none;
+    
+  }
+}
+   */
+
+   .scroll-stack {
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.scroll-stack-item {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+
+@theme {
+  /* Custom translate values */
+  --translate-101: 101%;
+
+  /* Custom keyframes */
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Custom animations */
+  --animate-marquee: marquee 15s linear infinite;
+}
