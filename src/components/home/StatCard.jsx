@@ -36,22 +36,21 @@ const SingleStatCard = ({ stat, label, isDark = true }) => {
   );
 };
 
-export default function StatCard() {
+ export default function StatCard() {
   return (
-    // Use a dark background for the container to make the cards pop, like a presentation slide
     <div className="min-h-screen py-5">
       <div className="max-w-[95%] py-16 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-        {/* 1. Card from the Image: 50+ Awards & Recognition */}
-        <SingleStatCard stat="50+" label="Awards & Recognition" isDark={true} />
+        {/* 1. Real Stat */}
+        <SingleStatCard stat="250+" label="Successful Projects" isDark={true} />
 
-        {/* 2. Example Stat Card */}
-        <SingleStatCard stat="20K" label="Active Users" isDark={true} />
+        {/* 2. Real Stat */}
+        <SingleStatCard stat="120+" label="Global Clients" isDark={true} />
 
-        {/* 3. Example Stat Card */}
-        <SingleStatCard stat="$15M" label="Capital Raised" isDark={true} />
+        {/* 3. Real Stat */}
+        <SingleStatCard stat="15+" label="Industries Served" isDark={true} />
 
-        {/* 4. Example Stat Card */}
-        <SingleStatCard stat="100%" label="Client Success" isDark={true} />
+        {/* 4. Real Stat */}
+        <SingleStatCard stat="100%" label="Client Satisfaction" isDark={true} />
       </div>
     </div>
   );

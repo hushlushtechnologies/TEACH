@@ -118,7 +118,7 @@ export default function Contact() {
       <section className="py-24 md:py-32 px-4 md:px-8 lg:px-16 max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
         {/* Left Side: Custom Message / Instructions */}
         <div className="lg:sticky lg:top-20 h-full">
-          <p className="text-blue-300 text-lg mb-4 uppercase tracking-widest contact-intro-text">
+          <p className="  text-lg mb-4 uppercase tracking-widest contact-intro-text">
             Start a Conversation
           </p>
           <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-8 contact-intro-text">
@@ -132,22 +132,36 @@ export default function Contact() {
 
           {/* Reusing the CallToAction component's contact details section for quick access */}
           <div className="mt-12 space-y-4">
-            <div className="location-info-block">
-              <p className="text-gray-400 text-sm mb-1">Email</p>
+            <div className=" ">
+              <p className="text-white text-sm mb-1">Email</p>
               <a
-                href="mailto:hello@trionn.com"
+                href="mailto:marketing@hushlushtechnologies.com"
                 className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
               >
-                hello@trionn.com
+                marketing@hushlushtechnologies.com
+              </a>{" "}
+              <br />
+              <a
+                href="mailto:bdm@hushlushtechnologies.com"
+                className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
+              >
+                bdm@hushlushtechnologies.com
               </a>
             </div>
-            <div className="location-info-block">
+            <div className="">
               <p className="text-gray-400 text-sm mb-1">Call</p>
               <a
-                href="tel:+919824182099"
+                href="tel:+971542321275"
                 className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
               >
-                +91 98241 82099
+                +971-542321275
+              </a>
+              <br />
+              <a
+                href="tel:971542321276"
+                className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
+              >
+                +971-542321276
               </a>
             </div>
           </div>
@@ -212,29 +226,62 @@ export default function Contact() {
             {/* Location Details */}
             <div className="lg:col-span-1 space-y-12">
               <div className="location-info-block">
-                <h3 className="text-2xl font-semibold mb-2">
-                  Global Headquarters
-                </h3>
+                <h3 className="text-2xl font-semibold mb-2">Headquarters</h3>
                 <p className="text-gray-400 text-lg leading-relaxed">
-                  123 Creative Studio, <br />
-                  Digital Innovation District, <br />
-                  New York, NY 10001
+                  Crystal Plaza, <br />
+                  Majaz 01, Sharjah, <br />
+                  UAE
                 </p>
               </div>
-              <div className="location-info-block">
-                <h3 className="text-2xl font-semibold mb-2">European Office</h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  45 Design Lane, <br />
-                  Tech Hub, <br />
-                  London, SW1A 0AA
-                </p>
-              </div>
+
+               <div className="mt-12 space-y-4">
+            <div className=" ">
+              <p className="text-white text-sm mb-1">Email</p>
+              <a
+                href="mailto:marketing@hushlushtechnologies.com"
+                className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
+              >
+                marketing@hushlushtechnologies.com
+              </a>{" "}
+              <br />
+              <a
+                href="mailto:bdm@hushlushtechnologies.com"
+                className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
+              >
+                bdm@hushlushtechnologies.com
+              </a>
+            </div>
+            <div className="">
+              <p className="text-gray-400 text-sm mb-1">Call</p>
+              <a
+                href="tel:+971542321275"
+                className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
+              >
+                +971-542321275
+              </a>
+              <br />
+              <a
+                href="tel:971542321276"
+                className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
+              >
+                +971-542321276
+              </a>
+            </div>
+          </div>
             </div>
 
             {/* Map Placeholder */}
             <div className="lg:col-span-2 h-96 bg-gray-800 rounded-lg overflow-hidden shadow-xl location-info-block">
               <div className="flex items-center justify-center w-full h-full text-gray-500 text-2xl font-light">
-                [Interactive Map Placeholder]
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225.3626612205991!2d55.386031330448624!3d25.344404896619114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b4ad1f84c95%3A0x905e1932b1c879a2!2sAfaq%20Alkhaleej%20Management%20Consultants!5e0!3m2!1sen!2sin!4v1759121768845!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  // style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -246,7 +293,7 @@ export default function Contact() {
         <SocialMediaLinks />
       </section>
 
-        <CallToActionAndContact />
+      <CallToActionAndContact />
     </div>
   );
 }

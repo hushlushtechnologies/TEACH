@@ -9,19 +9,22 @@ import { Route, Routes } from "react-router-dom";
 import About from "./pages/About/About";
 import Services from "./pages/Services/Services";
 import Contact from "./pages/Contact/Contact";
+import NotFound from "./components/common/NotFound";
+   
 
 export default function App() {
   useSmoothScroll();
   return (
     <>
       <SplashCursor SIM_RESOLUTION={200} />
-
       <Navbar />
+
       <Routes>
         <Route path="/" element={<HomeTwo />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />  
       </Routes>
 
       <Footer />

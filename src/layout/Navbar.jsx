@@ -9,6 +9,7 @@ import {
   Twitter,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 // Define the navigation data structure
 const navItems = [
@@ -18,82 +19,82 @@ const navItems = [
   {
     title: "Services",
     href: "/services",
-    submenu: [
-      {
-        title: "BRANDING",
-        links: [
-          { name: "Brand Consulting", href: "#" },
-          { name: "Industrial / Product Design", href: "#" },
-          { name: "Graphic Design", href: "#" },
-          { name: "Marketing Materials", href: "#" },
-          { name: "Business Development", href: "#" },
-        ],
-      },
-      {
-        title: "TECHNOLOGY",
-        links: [
-          { name: "AI & Machine Learning", href: "#" },
-          { name: "Web Development", href: "#" },
-          { name: "E-commerce", href: "#" },
-          { name: "Mobile App Development", href: "#" },
-          { name: "Quality Assurance & Testing", href: "#" },
-          { name: "Cloud Services", href: "#" },
-          { name: "Cyber Security", href: "#" },
-        ],
-      },
-      {
-        title: "SOCIAL MEDIA  ",
-        links: [
-          { name: "Search Engine Optimisation", href: "#" },
-          { name: "Search Engine Marketing", href: "#" },
-          { name: "Social Media Management", href: "#" },
-          { name: "Performance Marketing", href: "#" },
-          { name: "Content Marketing", href: "#" },
-          { name: "Marketing Automation", href: "#" },
-          { name: "Analytics", href: "#" },
-        ],
-      },
-      {
-        title: "DESIGNS  ",
-        links: [
-          { name: "UI/UX Design", href: "#" },
-          { name: "Website Design", href: "#" },
-          { name: "Mobile Experience", href: "#" },
-          { name: "Commerce Experience", href: "#" },
-          { name: "Human Machine Interface", href: "#" },
-          { name: "Logo Design", href: "#" },
-        ],
-      },
-      {
-        title: "AD FILM MAKING",
-        links: [
-          { name: "Cinematography", href: "#" },
-          { name: "AD Film Shoot", href: "#" },
-          { name: "Portfolio", href: "#" },
-        ],
-      },
-      {
-        title: "PHOTOGRAPHY",
-        links: [
-          { name: "Personal Photography", href: "#" },
-          { name: "Business Photography", href: "#" },
-        ],
-      },
-      {
-        title: "ANIMATION & VFX",
-        isWide: true,
-        links: [
-          { name: "VFX", href: "#" },
-          { name: "CGI", href: "#" },
-          { name: "Motion Graphics", href: "#" },
-          { name: "Visual effects animation", href: "#" },
-          { name: "VFX story boarding", href: "#" },
-          { name: "Virtual production", href: "#" },
-          { name: "2D animation", href: "#" },
-          { name: "3D animation", href: "#" },
-        ],
-      },
+    submenu :  [
+  {
+    title: "BRANDING",
+    links: [
+      { name: "Brand Consulting", href: "brand-consulting" },
+      { name: "Industrial / Product Design", href: "industrial-product-design" },
+      { name: "Graphic Design", href: "graphic-design" },
+      { name: "Marketing Materials", href: "marketing-materials" },
+      { name: "Business Development", href: "business-development" },
     ],
+  },
+  {
+    title: "TECHNOLOGY",
+    links: [
+      { name: "AI & Machine Learning", href: "ai-machine-learning" },
+      { name: "Web Development", href: "web-development" },
+      { name: "E-commerce", href: "e-commerce" },
+      { name: "Mobile App Development", href: "mobile-app-development" },
+      { name: "Quality Assurance & Testing", href: "quality-assurance-testing" },
+      { name: "Cloud Services", href: "cloud-services" },
+      { name: "Cyber Security", href: "cyber-security" },
+    ],
+  },
+  {
+    title: "SOCIAL MEDIA",
+    links: [
+      { name: "Search Engine Optimisation", href: "seo" },
+      { name: "Search Engine Marketing", href: "sem" },
+      { name: "Social Media Management", href: "social-media-management" },
+      { name: "Performance Marketing", href: "performance-marketing" },
+      { name: "Content Marketing", href: "content-marketing" },
+      { name: "Marketing Automation", href: "marketing-automation" },
+      { name: "Analytics", href: "analytics" },
+    ],
+  },
+  {
+    title: "DESIGNS",
+    links: [
+      { name: "UI/UX Design", href: "ui-ux-design" },
+      { name: "Website Design", href: "website-design" },
+      { name: "Mobile Experience", href: "mobile-experience" },
+      { name: "Commerce Experience", href: "commerce-experience" },
+      { name: "Human Machine Interface", href: "human-machine-interface" },
+      { name: "Logo Design", href: "logo-design" },
+    ],
+  },
+  {
+    title: "AD FILM MAKING",
+    links: [
+      { name: "Cinematography", href: "cinematography" },
+      { name: "AD Film Shoot", href: "ad-film-shoot" },
+      { name: "Portfolio", href: "portfolio" },
+    ],
+  },
+  {
+    title: "PHOTOGRAPHY",
+    links: [
+      { name: "Personal Photography", href: "personal-photography" },
+      { name: "Business Photography", href: "business-photography" },
+    ],
+  },
+  {
+    title: "ANIMATION & VFX",
+    isWide: true,
+    links: [
+      { name: "VFX", href: "vfx" },
+      { name: "CGI", href: "cgi" },
+      { name: "Motion Graphics", href: "motion-graphics" },
+      { name: "Visual Effects Animation", href: "visual-effects-animation" },
+      { name: "VFX Story Boarding", href: "vfx-story-boarding" },
+      { name: "Virtual Production", href: "virtual-production" },
+      { name: "2D Animation", href: "2d-animation" },
+      { name: "3D Animation", href: "3d-animation" },
+    ],
+  },
+]
   },
   { title: "Contact Us", href: "/contact" },
 ];
@@ -169,29 +170,23 @@ export default function Navbar() {
               aria-label="Facebook"
               className="hover:text-white transition-colors duration-300"
             >
-              <Facebook className="w-5 h-5" />
+              <FaInstagram className="w-5 h-5" />
             </a>
             <a
               href="#"
               aria-label="Instagram"
               className="hover:text-white transition-colors duration-300"
             >
-              <Instagram className="w-5 h-5" />
+              <FaTiktok className="w-5 h-5" />
             </a>
             <a
               href="#"
               aria-label="LinkedIn"
               className="hover:text-white transition-colors duration-300"
             >
-              <Linkedin className="w-5 h-5" />
+              <FaFacebookF className="w-5 h-5" />
             </a>
-            <a
-              href="#"
-              aria-label="Twitter"
-              className="hover:text-white transition-colors duration-300"
-            >
-              <Twitter className="w-5 h-5" />
-            </a>
+          
           </div>
 
           {/* Mobile menu toggle button (hamburger) */}
@@ -212,7 +207,7 @@ export default function Navbar() {
       {/* Mega Menu */}
       {isServicesOpen && (
         <div
-          className="absolute inset-x-0 top-full  bg-black bg-opacity-90 backdrop-blur-sm shadow-xl text-white py-8 transition-opacity duration-300 ease-in-out"
+          className="absolute inset-x-0 top-full bg-white   bg-opacity-90 backdrop-blur-sm shadow-xl text-white py-8 transition-opacity duration-300 ease-in-out"
           onMouseEnter={() => setIsServicesOpen(true)}
           onMouseLeave={() => setIsServicesOpen(false)}
           // onMouseLeave={() => {
@@ -232,7 +227,7 @@ export default function Navbar() {
                     {category.title}
                   </h3>
                   <ul
-                    className={`space-y-2 text-sm text-gray-300 ${
+                    className={`space-y-2 text-sm  text-gray-500 ${
                       category.isWide
                         ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
                         : ""

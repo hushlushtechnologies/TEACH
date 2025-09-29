@@ -2,6 +2,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import RecentWorkItem from "./RecentWorkItems";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,9 +56,9 @@ const WhoAreWe = () => {
           across the Middle East and beyond to bring bold ideas to life.
         </p>
 
-          <button className="px-10 py-4 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300 w-fit">
+          <Link to="/about" className="px-10 py-4 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300 w-fit">
             About Us
-          </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -60,7 +60,7 @@ export default function About() {
 
       <section className="who-we-are-section py-24 md:py-32 px-4 md:px-8 lg:px-16 max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div ref={textRef} className="who-we-are-text">
-          <p className="text-yellow-300 text-lg mb-4 uppercase tracking-widest">
+          <p className=" text-lg mb-4 uppercase tracking-widest">
             Who We Are
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
@@ -96,7 +96,7 @@ export default function About() {
       {/* 3. Our Approach Section */}
       <section className="our-approach-section py-24 md:py-32  px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          <p className="text-blue-300 text-lg mb-4 uppercase tracking-widest text-center">
+          <p className="  text-lg mb-4 uppercase tracking-widest text-center">
             Our Approach
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-center mb-16">

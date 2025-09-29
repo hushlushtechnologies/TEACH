@@ -2,6 +2,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText"; // GSAP SplitText plugin
+import { Link } from "react-router-dom";
 
 // IMPORTANT: Register GSAP plugins (do this once in your App.jsx or main entry point)
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -110,14 +111,15 @@ const HeroSection = () => {
             mx-auto
           "
         >
-          WE ROAR WITH SUCCESS. DELIVERING THE TRIONN* <br />
+          WE ROAR WITH SUCCESS.   <br />
           THROUGH VERSATILE DESIGN, BRANDING AND THE LATEST <br />
           TECH DEVELOPMENT TO COMPANIES.
         </p>
       </div>
 
       <div className="w-full flex justify-between items-center px-8 z-20">
-        <button
+        <Link
+        to="/services"
           ref={ctaLeftRef}
           className="
             px-8 py-3 
@@ -131,9 +133,10 @@ const HeroSection = () => {
           "
         >
           Explore Work
-        </button>
+        </Link>
 
-        <button
+        <Link
+        to="/contact"
           ref={ctaRightRef}
           className="
             px-8 py-3 
@@ -147,7 +150,7 @@ const HeroSection = () => {
           "
         >
           Get in touch
-        </button>
+        </Link>
       </div>
     </section>
   );

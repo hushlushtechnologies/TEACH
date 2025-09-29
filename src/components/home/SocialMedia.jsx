@@ -1,45 +1,45 @@
  import React, { useRef } from "react";
 import { gsap } from "gsap";
+import { FaInstagram, FaTiktok, FaFacebookF, FaYoutube } from "react-icons/fa";
 
-const SocialLinkItem = ({ name, iconSrc, link, iconBgColor }) => {
+const SocialLinkItem = ({ name, link, Icon, iconBgColor }) => {
   const linkRef = useRef(null);
   const iconRef = useRef(null);
 
- const handleMouseEnter = () => {
-  gsap.killTweensOf([linkRef.current, iconRef.current]);
+  const handleMouseEnter = () => {
+    gsap.killTweensOf([linkRef.current, iconRef.current]);
 
-  gsap.to(linkRef.current, {
-    scaleX: 1.3,
-    duration: 1.8,
-    ease: "elastic.out(1, 0.4)",
-    transformOrigin: "center",
-  });
+    gsap.to(linkRef.current, {
+      scaleX: 1.3,
+      duration: 1.8,
+      ease: "elastic.out(1, 0.4)",
+      transformOrigin: "center",
+    });
 
-  gsap.to(iconRef.current, {
-    rotate: 360,
-    duration: 1,
-    ease: "elastic.out(1, 0.5)",
-  });
-};
+    gsap.to(iconRef.current, {
+      rotate: 360,
+      duration: 1,
+      ease: "elastic.out(1, 0.5)",
+    });
+  };
 
-const handleMouseLeave = () => {
-  gsap.killTweensOf([linkRef.current, iconRef.current]);
+  const handleMouseLeave = () => {
+    gsap.killTweensOf([linkRef.current, iconRef.current]);
 
-  gsap.to(linkRef.current, {
-    scaleX: 1,
-    duration: 1.4,
-    ease: "power3.out",
-    transformOrigin: "center",
-  });
+    gsap.to(linkRef.current, {
+      scaleX: 1,
+      duration: 1.4,
+      ease: "power3.out",
+      transformOrigin: "center",
+    });
 
-  gsap.to(iconRef.current, {
-    rotate: 360,
-    duration: 1,
-    ease: "power3.out",
-
-  });
-};
-
+    gsap.to(iconRef.current, {
+      rotate: 360,
+      duration: 1,
+      ease: "power3.out",
+       
+    });
+  };
 
   return (
     <a
@@ -47,7 +47,7 @@ const handleMouseLeave = () => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group   flex items-center justify-between py-5 px-4 w-full border-b border-white border-opacity-10 transform"
+      className="group flex items-center justify-between py-5 px-4 w-full border-b border-white border-opacity-10 transform"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -61,13 +61,9 @@ const handleMouseLeave = () => {
         {/* Social media icon */}
         <div
           ref={iconRef}
-          className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center p-1 ${iconBgColor}`}
+          className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-white text-xl ${iconBgColor}`}
         >
-          <img
-            src={iconSrc}
-            alt={`${name} icon`}
-            className="w-full h-full object-contain"
-          />
+          <Icon />
         </div>
       </div>
     </a>
@@ -77,32 +73,28 @@ const handleMouseLeave = () => {
 export default function SocialMediaLinks() {
   const socialLinks = [
     {
-      name: "Dribbble",
-      link: "https://dribbble.com/",
-      iconSrc:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Dribbble_icon_%282023%29.svg/2048px-Dribbble_icon_%282023%29.svg.png",
-      iconBgColor: "bg-pink-600",
-    },
-    {
-      name: "LinkedIn",
-      link: "https://www.linkedin.com/",
-      iconSrc:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png",
-      iconBgColor: "bg-blue-600",
-    },
-    {
       name: "Instagram",
       link: "https://www.instagram.com/",
-      iconSrc:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png",
+      Icon: FaInstagram,
       iconBgColor: "bg-gradient-to-br from-purple-500 via-red-500 to-yellow-500",
     },
     {
-      name: "Behance",
-      link: "https://www.behance.net/",
-      iconSrc:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Behance_logo.svg/1024px-Behance_logo.svg.png",
-      iconBgColor: "bg-blue-700",
+      name: "TikTok",
+      link: "https://www.tiktok.com/",
+      Icon: FaTiktok,
+      iconBgColor: "bg-black",
+    },
+    {
+      name: "Facebook",
+      link: "https://www.facebook.com/",
+      Icon: FaFacebookF,
+      iconBgColor: "bg-blue-600",
+    },
+    {
+      name: "YouTube",
+      link: "https://www.youtube.com/",
+      Icon: FaYoutube,
+      iconBgColor: "bg-red-600",
     },
   ];
 
@@ -113,8 +105,8 @@ export default function SocialMediaLinks() {
           <SocialLinkItem
             key={item.name}
             name={item.name}
-            iconSrc={item.iconSrc}
             link={item.link}
+            Icon={item.Icon}
             iconBgColor={item.iconBgColor}
           />
         ))}

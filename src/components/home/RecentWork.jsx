@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import RecentWorkItem from "./RecentWorkItems";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,9 +44,9 @@ const RecentWork = () => {
           In the creative wilderness, clients find our work truly beloved.
         </p>
         <div className="flex justify-end items-center">
-          <button className="px-10 py-4 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300 w-fit">
-            Explore work
-          </button>
+          <Link to="/services" className="px-10 py-4 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300 w-fit">
+            Explore Services
+          </Link>
         </div>
       </div>
 

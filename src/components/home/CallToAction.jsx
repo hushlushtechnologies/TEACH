@@ -25,16 +25,16 @@ export default function CallToActionAndContact() {
         {/* Email */}
         <div className="flex flex-col items-start">
           <p className="text-gray-400 text-sm mb-1">Email</p>
-          <a href="mailto:hello@trionn.com" className="text-white text-xl font-medium hover:text-blue-200 transition-colors duration-300">
-            hello@trionn.com
+          <a href="mailto:marketing@hushlushtechnologies.com" className="text-white text-xl font-medium hover:text-blue-200 transition-colors duration-300">
+            marketing@hushlushtechnologies.com
           </a>
         </div>
 
         {/* Call */}
         <div className="flex flex-col items-start">
           <p className="text-gray-400 text-sm mb-1">Call</p>
-          <a href="tel:+919824182099" className="text-white text-xl font-medium hover:text-blue-200 transition-colors duration-300">
-            +91 98241 82099
+          <a href="tel:+971542321275" className="text-white text-xl font-medium hover:text-blue-200 transition-colors duration-300">
+          +971-542321275
           </a>
         </div>
 
@@ -42,7 +42,7 @@ export default function CallToActionAndContact() {
         <div className="flex flex-col items-start md:items-end"> {/* Align "Teams" to the right on medium screens and up */}
           <p className="text-gray-400 text-sm mb-1">Teams</p>
           <button className="text-white text-xl font-medium hover:text-blue-200 transition-colors duration-300">
-            Talk to Trionn
+            Talk to HushLush
           </button>
         </div>
       </div>
