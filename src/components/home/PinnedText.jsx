@@ -69,7 +69,7 @@ el.innerHTML = text
           ref={textRef}
           className="text-3xl md:text-5xl font-extrabold uppercase mx-auto max-w-6xl text-center leading-relaxed  "
         >
-          Transform the digital presence with <br />Hushlush Technology
+          Transform the digital presence with <br />Hushlush Technologies
         </h2>
         {/* Logo */}
         <img

@@ -60,20 +60,25 @@ export default function About() {
 
       <section className="who-we-are-section py-24 md:py-32 px-4 md:px-8 lg:px-16 max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div ref={textRef} className="who-we-are-text">
-          <p className=" text-lg mb-4 uppercase tracking-widest">
-            Who We Are
-          </p>
+          <p className=" text-lg mb-4 uppercase tracking-widest">Who We Are</p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
             We are the creative force driving innovation and impact.
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            Founded on the principles of pushing boundaries and challenging the
-            status quo, our agency thrives on transforming complex ideas into
-            captivating digital experiences. We believe in a collaborative
-            journey, working hand-in-hand with our clients to craft solutions
-            that resonate and leave a lasting impression. Our multidisciplinary
-            team brings together diverse talents, ensuring a holistic approach
-            to every project.
+            At Hushlush Technologies, we excel in delivering comprehensive
+            marketing and web development services tailored to elevate your
+            business. Our expertise extends to technology solutions, animation
+            and VFX, as well as photography and cinematography services. The
+            Hushlush Technologies team comprises creative designers,
+            programmers, developers, content creators, and producers dedicated
+            to innovating and implementing effective strategies to help your
+            business thrive. Since our establishment, Hushlush Technologies has
+            been providing marketing plans and strategies to trademark owners,
+            helping them reach both local and global markets. We utilize
+            traditional commercial advertisements alongside digital marketing
+            through the internet, social media, applications, SEO, and paid
+            Google Ads to ensure your brand connects with its audience wherever
+            they are.
           </p>
           <p className="text-gray-300 text-lg leading-relaxed mt-4">
             From branding to full-stack development, our passion lies in
@@ -125,9 +130,9 @@ export default function About() {
             <div className="approach-item text-center">
               <div className="w-20 h-20  rounded-full flex items-center justify-center mx-auto mb-6">
                 <img
-                   src="/img/design.png"
+                  src="/img/design.png"
                   alt="Step 2"
-                 className="w-full h-full object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <h3 className="text-2xl font-semibold mb-4">
