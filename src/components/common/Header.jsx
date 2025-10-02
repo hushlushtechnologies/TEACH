@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 export default function Header({
     eyebrow = "A",
-  headline = ["VERSATILE", "DESIGN AGENCY."],
+  headline  ="",
   description = "COMBINING THE LATEST TRENDS IN DESIGN, TECH, BRANDING AND MANY OTHER FIELDS IS WHAT WE DO BEST. WE DON'T SETTLE TO VIEW THE WORLD FROM ONE PERSPECTIVE.",
 }) {
   return (

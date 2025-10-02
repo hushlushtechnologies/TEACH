@@ -74,7 +74,7 @@ export default function SocialMediaLinks() {
   const socialLinks = [
     {
       name: "Instagram",
-      link: "https://www.instagram.com/",
+      link: "https://www.instagram.com/hushlush_technologies?igsh=MTF2aTFiMzVsMWJ4dQ==",
       Icon: FaInstagram,
       iconBgColor: "bg-gradient-to-br from-purple-500 via-red-500 to-yellow-500",
     },

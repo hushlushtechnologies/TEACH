@@ -64,10 +64,10 @@ el.innerHTML = text
 
   return (
     <section ref={containerRef}>
-      <div className="h-screen flex flex-col items-center justify-center gap-8 overflow-hidden">
+      <div className="hidden md:flex h-screen   flex-col items-center justify-center gap-8 overflow-hidden">
         <h2
           ref={textRef}
-          className="text-3xl md:text-5xl font-extrabold uppercase mx-auto max-w-6xl text-center leading-relaxed  "
+          className="text-2xl md:text-5xl font-extrabold uppercase mx-auto   max-w-6xl text-center leading-relaxed  "
         >
           Transform the digital presence with <br />Hushlush Technologies
         </h2>
@@ -76,7 +76,7 @@ el.innerHTML = text
           ref={logoRef}
           src="/favicon.png"
           alt="Logo"
-          className="w-20 opacity-0" // initially hidden
+          className="w-20 opacity-0"  
         />
       </div>
     </section>

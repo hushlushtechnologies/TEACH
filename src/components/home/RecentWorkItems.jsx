@@ -2,10 +2,11 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const RecentWorkItem = ({ title, description, tags, videoUrl, isVideoLeft = false }) => {
+const RecentWorkItem = ({ title,path, description, tags, videoUrl, isVideoLeft = false }) => {
   const videoRef = useRef(null);
   const textRef = useRef(null);
 
@@ -82,9 +83,9 @@ const RecentWorkItem = ({ title, description, tags, videoUrl, isVideoLeft = fals
         </h3>
         <p className="text-lg md:text-xl text-gray-400 mb-6">{description}</p>
         <p className="text-md md:text-lg text-gray-500 mb-8">{tags}</p>
-        <button className="px-8 py-3 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
-          View project
-        </button>
+        <Link to={path} className="px-8 py-3 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
+          View  details 
+        </Link>
       </div>
 
       {!isVideoLeft && (

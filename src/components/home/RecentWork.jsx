@@ -57,6 +57,7 @@ const RecentWork = () => {
           tags="Fashion, Photography, Model Shoot, Editorial"
           videoUrl="/video/modeling.mp4"
           isVideoLeft={false}
+          path="/services/personal-photography"
         />
 
         <RecentWorkItem
@@ -65,6 +66,7 @@ const RecentWork = () => {
           tags="Product Photography, Fashion, Kurti Shoot"
           videoUrl="/video/product.mp4"
           isVideoLeft={true}
+          path="/services/business-photography"
         />
 
         <RecentWorkItem
@@ -73,6 +75,7 @@ const RecentWork = () => {
           tags="Product Design, Packaging, Visual Identity"
           videoUrl="/video/branding.mp4"  
           isVideoLeft={false}  
+          path="/services/brand-consulting"
         />
       </div>
     </section>

@@ -64,81 +64,166 @@ export default function Services() {
     });
   }, []);
 
+  // const serviceCategories = [
+  //   {
+  //     category: "BRANDING",
+  //     description: "Empower your brand identity with our strategic and creative branding solutions.",
+  //     services: [
+  //       "Brand Consulting",
+  //       "Industrial / Product Design",
+  //       "Graphic Design",
+  //       "Marketing Materials",
+  //       "Business Development",
+  //     ],
+  //   },
+  //   {
+  //     category: "TECHNOLOGY",
+  //     description: "Cutting-edge technology solutions to elevate your business to new heights.",
+  //     services: [
+  //       "AI & Machine Learning",
+  //       "Web Development",
+  //       "E-commerce",
+  //       "Mobile App Development",
+  //       "Quality Assurance & Testing",
+  //       "Cloud Services",
+  //       "Cyber Security",
+  //     ],
+  //   },
+  //   {
+  //     category: "SOCIAL MEDIA",
+  //     description: "Grow your online presence and reach the right audience effectively.",
+  //     services: [
+  //       "Search Engine Optimisation",
+  //       "Search Engine Marketing",
+  //       "Social Media Management",
+  //       "Performance Marketing",
+  //       "Content Marketing",
+  //       "Marketing Automation",
+  //       "Analytics",
+  //     ],
+  //   },
+  //   {
+  //     category: "DESIGNS",
+  //     description: "Beautiful and functional designs to create memorable user experiences.",
+  //     services: [
+  //       "UI/UX Design",
+  //       "Website Design",
+  //       "Mobile Experience",
+  //       "Commerce Experience",
+  //       "Human Machine Interface",
+  //       "Logo Design",
+  //     ],
+  //   },
+  //   {
+  //     category: "AD FILM MAKING",
+  //     description: "Bring stories to life with our cinematic expertise and production services.",
+  //     services: ["Cinematography", "AD Film Shoot", "Portfolio"],
+  //   },
+  //   {
+  //     category: "PHOTOGRAPHY",
+  //     description: "Capture moments and business visuals that resonate with your audience.",
+  //     services: ["Personal Photography", "Business Photography"],
+  //   },
+  //   {
+  //     category: "ANIMATION & VFX",
+  //     description: "Stunning animation and VFX services to make your vision come alive.",
+  //     services: [
+  //       "VFX",
+  //       "CGI",
+  //       "Motion Graphics",
+  //       "Visual effects animation",
+  //       "VFX story boarding",
+  //       "Virtual production",
+  //       "2D animation",
+  //       "3D animation",
+  //     ],
+  //   },
+  // ];
+
+
   const serviceCategories = [
-    {
-      category: "BRANDING",
-      description: "Empower your brand identity with our strategic and creative branding solutions.",
-      services: [
-        "Brand Consulting",
-        "Industrial / Product Design",
-        "Graphic Design",
-        "Marketing Materials",
-        "Business Development",
-      ],
-    },
-    {
-      category: "TECHNOLOGY",
-      description: "Cutting-edge technology solutions to elevate your business to new heights.",
-      services: [
-        "AI & Machine Learning",
-        "Web Development",
-        "E-commerce",
-        "Mobile App Development",
-        "Quality Assurance & Testing",
-        "Cloud Services",
-        "Cyber Security",
-      ],
-    },
-    {
-      category: "SOCIAL MEDIA",
-      description: "Grow your online presence and reach the right audience effectively.",
-      services: [
-        "Search Engine Optimisation",
-        "Search Engine Marketing",
-        "Social Media Management",
-        "Performance Marketing",
-        "Content Marketing",
-        "Marketing Automation",
-        "Analytics",
-      ],
-    },
-    {
-      category: "DESIGNS",
-      description: "Beautiful and functional designs to create memorable user experiences.",
-      services: [
-        "UI/UX Design",
-        "Website Design",
-        "Mobile Experience",
-        "Commerce Experience",
-        "Human Machine Interface",
-        "Logo Design",
-      ],
-    },
-    {
-      category: "AD FILM MAKING",
-      description: "Bring stories to life with our cinematic expertise and production services.",
-      services: ["Cinematography", "AD Film Shoot", "Portfolio"],
-    },
-    {
-      category: "PHOTOGRAPHY",
-      description: "Capture moments and business visuals that resonate with your audience.",
-      services: ["Personal Photography", "Business Photography"],
-    },
-    {
-      category: "ANIMATION & VFX",
-      description: "Stunning animation and VFX services to make your vision come alive.",
-      services: [
-        "VFX",
-        "CGI",
-        "Motion Graphics",
-        "Visual effects animation",
-        "VFX story boarding",
-        "Virtual production",
-        "2D animation",
-        "3D animation",
-      ],
-    },
-  ];
+  {
+    category: "BRANDING",
+    description: "Empower your brand identity with our strategic and creative branding solutions.",
+    services: [
+      { name: "Brand Consulting", href: "brand-consulting" },
+      { name: "Industrial / Product Design", href: "industrial-product-design" },
+      { name: "Graphic Design", href: "graphic-design" },
+      { name: "Marketing Materials", href: "marketing-materials" },
+      { name: "Business Development", href: "business-development" },
+    ],
+  },
+  {
+    category: "TECHNOLOGY",
+    description: "Cutting-edge technology solutions to elevate your business to new heights.",
+    services: [
+      { name: "AI & Machine Learning", href: "ai-machine-learning" },
+      { name: "Web Development", href: "web-development" },
+      { name: "E-commerce", href: "e-commerce" },
+      { name: "Mobile App Development", href: "mobile-app-development" },
+      { name: "Quality Assurance & Testing", href: "quality-assurance-testing" },
+      { name: "Cloud Services", href: "cloud-services" },
+      { name: "Cyber Security", href: "cyber-security" },
+    ],
+  },
+  {
+    category: "SOCIAL MEDIA",
+    description: "Grow your online presence and reach the right audience effectively.",
+    services: [
+      { name: "Search Engine Optimisation", href: "seo" },
+      { name: "Search Engine Marketing", href: "sem" },
+      { name: "Social Media Management", href: "social-media-management" },
+      { name: "Performance Marketing", href: "performance-marketing" },
+      { name: "Content Marketing", href: "content-marketing" },
+      { name: "Marketing Automation", href: "marketing-automation" },
+      { name: "Analytics", href: "analytics" },
+    ],
+  },
+  {
+    category: "DESIGNS",
+    description: "Beautiful and functional designs to create memorable user experiences.",
+    services: [
+      { name: "UI/UX Design", href: "ui-ux-design" },
+      { name: "Website Design", href: "website-design" },
+      { name: "Mobile Experience", href: "mobile-experience" },
+      { name: "Commerce Experience", href: "commerce-experience" },
+      { name: "Human Machine Interface", href: "human-machine-interface" },
+      { name: "Logo Design", href: "logo-design" },
+    ],
+  },
+  {
+    category: "AD FILM MAKING",
+    description: "Bring stories to life with our cinematic expertise and production services.",
+    services: [
+      { name: "Cinematography", href: "cinematography" },
+      { name: "AD Film Shoot", href: "ad-film-shoot" },
+      { name: "Portfolio", href: "portfolio" },
+    ],
+  },
+  {
+    category: "PHOTOGRAPHY",
+    description: "Capture moments and business visuals that resonate with your audience.",
+    services: [
+      { name: "Personal Photography", href: "personal-photography" },
+      { name: "Business Photography", href: "business-photography" },
+    ],
+  },
+  {
+    category: "ANIMATION & VFX",
+    description: "Stunning animation and VFX services to make your vision come alive.",
+    services: [
+      { name: "VFX", href: "vfx" },
+      { name: "CGI", href: "cgi" },
+      { name: "Motion Graphics", href: "motion-graphics" },
+      { name: "Visual Effects Animation", href: "visual-effects-animation" },
+      { name: "VFX Story Boarding", href: "vfx-story-boarding" },
+      { name: "Virtual Production", href: "virtual-production" },
+      { name: "2D Animation", href: "2d-animation" },
+      { name: "3D Animation", href: "3d-animation" },
+    ],
+  },
+];
+
 
   return (
     <>

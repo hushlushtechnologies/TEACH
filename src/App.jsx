@@ -10,12 +10,15 @@ import About from "./pages/About/About";
 import Services from "./pages/Services/Services";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./components/common/NotFound";
+import ServiceDetails from "./pages/Services/ServiceDetails";
+import ScrollToTop from "./components/common/ScrollToTop";
    
 
 export default function App() {
   useSmoothScroll();
   return (
     <>
+    <ScrollToTop/>
       <SplashCursor SIM_RESOLUTION={200} />
       <Navbar />
 
@@ -23,6 +26,7 @@ export default function App() {
         <Route path="/" element={<HomeTwo />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+       <Route path="/services/:serviceId" element={<ServiceDetails />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />  
       </Routes>

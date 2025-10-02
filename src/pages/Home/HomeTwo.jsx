@@ -17,37 +17,37 @@ export default function HomeTwo() {
     {
       link: "#",
       text: "Branding",
-      image: "https://picsum.photos/600/400?random=10",
+      image: "/img/brand.jpg",
     },
     {
       link: "#",
       text: "Technology",
-      image: "https://picsum.photos/600/400?random=11",
+      image: "/img/technology.jpg",
     },
     {
       link: "#",
       text: "Social Media Marketing",
-      image: "https://picsum.photos/600/400?random=12",
+      image: "/img/social.jpg",
     },
     {
       link: "#",
       text: "Designs & Creatives",
-      image: "https://picsum.photos/600/400?random=13",
+      image: "/img/design.jpg",
     },
     {
       link: "#",
       text: "Ad Film Making",
-      image: "https://picsum.photos/600/400?random=14",
+      image: "/img/adfilm.jpg",
     },
     {
       link: "#",
       text: "Photography",
-      image: "https://picsum.photos/600/400?random=15",
+      image: "/img/photo.jpg",
     },
     {
       link: "#",
       text: "Animation & VFX",
-      image: "https://picsum.photos/600/400?random=16",
+      image: "/img/vfx.jpg",
     },
   ];
 
