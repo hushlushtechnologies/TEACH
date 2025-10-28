@@ -2360,7 +2360,7 @@ export const servicesContent = {
     title: "3D Animation",
     description:
       "We create photorealistic 3D animations for films, advertisements, product demos, and virtual experiences.",
-    image: "/s/3d.jpg",
+    image: "/s/3d.jpg    ",
     features: [
       "3D modeling & rendering",
       "Character & environment animation",

@@ -54,7 +54,7 @@ export default function HomeTwo() {
   return (
      <>
      <HeroSection />
-      <VideoExpandSection />
+      <VideoExpandSection />  
       <PinnedText />
       <RecentWork />
       <WhoAreWe />

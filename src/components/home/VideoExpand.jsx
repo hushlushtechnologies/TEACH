@@ -69,7 +69,7 @@ const VideoExpandSection = () => {
         className="relative rounded-2xl overflow-hidden border border-gray-600 shadow-lg aspect-video"
       >
         <video
-          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          src="/video/yy.mp4"
           loop
           muted
           playsInline
