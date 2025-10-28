@@ -235,7 +235,7 @@ export default function Services() {
 
       <div className="text-center flex justify-center items-center h-[50vh] mt-8 max-w-3xl mx-auto px-4">
         <h3 ref={h3Ref} className="text-4xl font-semibold leading-snug">
-          HUSH LUSH has a roaring 20+ years history of empowering companies in
+          HUSH LUSH has a roaring 3+ years history of empowering companies in
           the corporate jungle.
         </h3>
       </div>
