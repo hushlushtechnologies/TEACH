@@ -240,7 +240,7 @@ export default function Services() {
         </h3>
       </div>
 
- 
+ +
 
       {/* Dynamically render all service categories */}
       {serviceCategories.map((cat, index) => (
