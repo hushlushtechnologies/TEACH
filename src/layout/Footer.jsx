@@ -34,10 +34,10 @@ const footerData = {
     "Sitemap",
   ],
   connect: [
-    { type: "General Enquiry", phone: "+971-542321275" },
-    { type: "Sales Enquiry", phone: "+971-542321276" },
+    { type: "General Enquiry", phone: "+971-542321279" },
+    // { type: "Sales Enquiry", phone: "+971-542321276" },
     { type: "Email (Marketing)", email: "marketing@hushlushtechnologies.com" },
-    { type: "Email (BDM)", email: "bdm@hushlushtechnologies.com" },
+    // { type: "Email (BDM)", email: "bdm@hushlushtechnologies.com" },
   ],
 };
 

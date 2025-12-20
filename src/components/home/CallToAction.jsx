@@ -35,8 +35,8 @@ export default function CallToActionAndContact() {
         {/* Call */}
         <div className="flex flex-col items-start">
           <p className="text-gray-400 text-sm mb-1">Call</p>
-          <a href="tel:+971542321275" className="text-white text-xl font-medium hover:text-blue-200 transition-colors duration-300">
-          +971-542321275
+          <a href="tel:+971542321279" className="text-white text-xl font-medium hover:text-blue-200 transition-colors duration-300">
+          +971 542321279
           </a>
         </div>
 

@@ -141,28 +141,28 @@ export default function Contact() {
                 marketing@hushlushtechnologies.com
               </a>{" "}
               <br />
-              <a
+              {/* <a
                 href="mailto:bdm@hushlushtechnologies.com"
                 className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
               >
                 bdm@hushlushtechnologies.com
-              </a>
+              </a> */}
             </div>
             <div className="">
               <p className="text-gray-400 text-sm mb-1">Call</p>
               <a
-                href="tel:+971542321275"
+                href="tel:+971542321279"
                 className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
               >
-                +971-542321275
+               +971 542321279
               </a>
               <br />
-              <a
+              {/* <a
                 href="tel:971542321276"
                 className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
               >
                 +971-542321276
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -244,28 +244,28 @@ export default function Contact() {
                 marketing@hushlushtechnologies.com
               </a>{" "}
               <br />
-              <a
+              {/* <a
                 href="mailto:bdm@hushlushtechnologies.com"
                 className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
               >
                 bdm@hushlushtechnologies.com
-              </a>
+              </a> */}
             </div>
             <div className="">
               <p className="text-gray-400 text-sm mb-1">Call</p>
               <a
-                href="tel:+971542321275"
+                href="tel:+971542321279"
                 className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
               >
-                +971-542321275
+               +971 542321279
               </a>
               <br />
-              <a
+              {/* <a
                 href="tel:971542321276"
                 className="text-white text-xl font-medium hover:text-blue-200 transition-colors"
               >
                 +971-542321276
-              </a>
+              </a> */}
             </div>
           </div>
             </div>
