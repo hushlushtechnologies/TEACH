@@ -23,8 +23,8 @@ export default function App() {
     <ScrollToTop/>
       <SplashCursor SIM_RESOLUTION={200} />
       <Navbar />
-      <SnowfallEffect/>
-      <SantaWaving/>
+      {/* <SnowfallEffect/> */}
+      {/* <SantaWaving/> */}
 
       <Routes>
         <Route path="/" element={<HomeTwo />} />
