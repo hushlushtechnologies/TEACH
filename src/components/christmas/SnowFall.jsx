@@ -1,91 +1,72 @@
- import { useEffect } from "react";
+ 'use client'
+import { useEffect } from "react";
 
-const SnowfallEffect = () => {
+export default function RamadanGlow() {
   useEffect(() => {
     const canvas = document.createElement("canvas");
-    canvas.id = "snowfall";
+    canvas.id = "ramadan-night";
     document.body.appendChild(canvas);
 
     const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
     canvas.style.position = "fixed";
-    canvas.style.top = 0;
-    canvas.style.left = 0;
-    canvas.style.zIndex = "9999";
+    canvas.style.top = "0";
+    canvas.style.left = "0";
     canvas.style.pointerEvents = "none";
-    canvas.style.width = "100vw";
-    canvas.style.height = "100vh";
+    canvas.style.zIndex = "0";
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    resize();
+    window.addEventListener("resize", resize);
 
-    let particles = [];
+    // ⭐ Stars
+    const stars = Array.from({ length: 180 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      size: Math.random() * 1.5 + 0.5,
+      opacity: Math.random(),
+      speed: Math.random() * 0.02 + 0.01,
+    }));
 
-    function createParticles() {
-      for (let i = 0; i < 35; i++) {
-        particles.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          r: Math.random() * 3 + 1,
-          d: Math.random() * 1 + 0.5,
-          isSparkle: Math.random() > 0.85, // Small chance of sparkle
-        });
-      }
-    }
-
-    function drawParticles() {
+    const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      particles.forEach((p) => {
+      // 🌌 Dark overlay
+    ctx.fillStyle = "rgba(11,28,45,0.1)";
+
+
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // ⭐ Draw stars
+      stars.forEach(star => {
         ctx.beginPath();
-        ctx.fillStyle = p.isSparkle
-          ? "rgba(255, 215, 0, 0.8)" // Golden sparkle
-          : "rgba(255, 255, 255, 0.9)";
-
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
+        ctx.fillStyle = `rgba(255,255,255,${star.opacity})`;
+        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
         ctx.fill();
-      });
 
-      updateParticles();
-    }
-
-    let angle = 0;
-
-    function updateParticles() {
-      angle += 0.002;
-
-      particles.forEach((p, index) => {
-        p.y += Math.cos(angle + p.d) + p.d;
-        p.x += Math.sin(angle) * 0.8;
-
-        // Respawn when off-screen
-        if (p.y > canvas.height) {
-          particles[index] = {
-            x: Math.random() * canvas.width,
-            y: -5,
-            r: p.r,
-            d: p.d,
-            isSparkle: Math.random() > 0.85,
-          };
+        // Twinkle animation
+        star.opacity += star.speed;
+        if (star.opacity > 1 || star.opacity < 0) {
+          star.speed = -star.speed;
         }
       });
-    }
+    };
 
-    createParticles();
-
-    let animationFrame;
     const animate = () => {
-      drawParticles();
-      animationFrame = requestAnimationFrame(animate);
+      draw();
+      requestAnimationFrame(animate);
     };
     animate();
 
     return () => {
-      cancelAnimationFrame(animationFrame);
-      document.body.removeChild(canvas);
+      window.removeEventListener("resize", resize);
+      canvas.remove();
     };
   }, []);
 
   return null;
-};
-
-export default SnowfallEffect;
+}
