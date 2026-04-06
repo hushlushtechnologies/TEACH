@@ -12,8 +12,7 @@ import Contact from "./pages/Contact/Contact";
 import NotFound from "./components/common/NotFound";
 import ServiceDetails from "./pages/Services/ServiceDetails";
 import ScrollToTop from "./components/common/ScrollToTop";
-import RamadanGlow from "./components/christmas/SnowFall";
-import SantaWaving from "./components/christmas/SantaWaving";
+ 
    
 
 export default function App() {
@@ -23,8 +22,8 @@ export default function App() {
     <ScrollToTop/>
       <SplashCursor SIM_RESOLUTION={200} />
       <Navbar />
-      <RamadanGlow/>
-      <SantaWaving/>
+      {/* <RamadanGlow/>
+      <SantaWaving/> */}
 
       <Routes>
         <Route path="/" element={<HomeTwo />} />
