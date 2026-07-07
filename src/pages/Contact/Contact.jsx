@@ -227,11 +227,11 @@ export default function Contact() {
             <div className="lg:col-span-1 space-y-12">
               <div className="location-info-block">
                 <h3 className="text-2xl font-semibold mb-2">Headquarters</h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Crystal Plaza, <br />
-                  Majaz 01, Sharjah, <br />
-                  UAE
-                </p>
+<p className="text-gray-400 text-lg leading-relaxed">
+  Office no 501, Al Zarooni Building, <br />
+  Near Insurance Market Metro Station, <br />
+  Sheikh Zayed Road, Al Barsha, Dubai
+</p>
               </div>
 
                <div className="mt-12 space-y-4">
@@ -274,14 +274,13 @@ export default function Contact() {
             <div className="lg:col-span-2 h-96 bg-gray-800 rounded-lg overflow-hidden shadow-xl location-info-block">
               <div className="flex items-center justify-center w-full h-full text-gray-500 text-2xl font-light">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225.3626612205991!2d55.386031330448624!3d25.344404896619114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b4ad1f84c95%3A0x905e1932b1c879a2!2sAfaq%20Alkhaleej%20Management%20Consultants!5e0!3m2!1sen!2sin!4v1759121768845!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  // style="border:0;"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d537.0433594113546!2d55.1840602045014!3d25.1092165872698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sae!4v1783409710884!5m2!1sen!2sae"
+  width="100%"
+  height="100%"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+></iframe>
               </div>
             </div>
           </div>
